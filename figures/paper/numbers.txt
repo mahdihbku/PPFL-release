@@ -1,0 +1,29 @@
+C_min(tau=2, T/N=10%, E=4000) = 20
+accuracy sg iid: final FedAvg 0.9876 proposed 0.9837 max|diff| 0.0089
+accuracy sg dir03: final FedAvg 0.9381 proposed 0.9381 max|diff| 0.0000
+accuracy sg dir10: final FedAvg 0.9381 proposed 0.9381 max|diff| 0.0000
+accuracy nsl_binary iid: final FedAvg 0.7779 proposed 0.7769 max|diff| 0.0185
+accuracy nsl_binary dir03: final FedAvg 0.7401 proposed 0.7447 max|diff| 0.0245
+accuracy nsl_binary dir10: final FedAvg 0.7665 proposed 0.7742 max|diff| 0.0136
+accuracy nsl_multiclass iid: final FedAvg 0.7098 proposed 0.7104 max|diff| 0.0018
+accuracy nsl_multiclass dir03: final FedAvg 0.7068 proposed 0.7076 max|diff| 0.0016
+accuracy nsl_multiclass dir10: final FedAvg 0.7069 proposed 0.7064 max|diff| 0.0010
+VRF ms: keygen 0.0118, prove 0.2624, verify 0.4576
+committee verify ms: C=5 2.45, C=10 5.33, C=15 8.34, C=20 10.69, C=25 13.84, C=30 16.84
+comp C=20: client 104.0 ms; member N=100 220, N=500 266, N=1000 322, N=2000 432, N=3000 544 ms; server N=100 27, N=500 74, N=1000 136, N=2000 254, N=3000 376 ms
+comm C=20 N=3000 P=64811 client: up 170 B, down 6545 B
+comm C=20 N=3000 P=64811 member: up 263286 B, down 909198 B
+comm C=20 N=3000 P=64811 server: up 7777605 B, down 5706360 B
+comp C=30: client 112.0 ms; member N=100 221, N=500 271, N=1000 327, N=2000 431, N=3000 541 ms; server N=100 34, N=500 82, N=1000 142, N=2000 264, N=3000 383 ms
+comm C=30 N=3000 P=64811 client: up 170 B, down 9765 B
+comm C=30 N=3000 P=64811 member: up 265056 B, down 914448 B
+comm C=30 N=3000 P=64811 server: up 11666355 B, down 8304540 B
+SecAgg+ k (Bell, gamma=0.1, delta=0.05): N=100 k=16, N=500 k=36, N=1000 k=42, N=2000 k=44, N=3000 k=46
+baseline N=3000 ours: client 9935 B, server 19970895 B, client 112.0 ms, server 383 ms
+baseline N=3000 secagg: client 995784 B, server 2987352000 B, client 447.6 ms, server 648 ms
+baseline N=3000 secagg+: client 15388 B, server 46164000 B, client 4.9 ms, server 877 ms
+flamingo N=128: client 5456 B 67.6 ms; decryptor extra 23072 B 4.5 ms; server 2089839 B 60 ms
+flamingo N=256: client 5754 B 77.3 ms; decryptor extra 35064 B 9.1 ms; server 3585165 B 117 ms
+flamingo N=512: client 6206 B 83.7 ms; decryptor extra 58757 B 17.8 ms; server 6690166 B 219 ms
+flamingo N=1024: client 6526 B 91.4 ms; decryptor extra 106773 B 35.4 ms; server 13070888 B 447 ms
+flamingo N=2048: client 6839 B 100.1 ms; decryptor extra 202629 B 70.4 ms; server 26119309 B 884 ms
